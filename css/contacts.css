@@ -1,4 +1,9 @@
-﻿nav {
+﻿#conteiner {
+    display: flex;
+    gap: 35px;
+}
+
+nav {
     background-color: #c7e1ff;
     font-size: 25px;
 }
@@ -56,3 +61,85 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    height: 700px;
+}
+
+
+#information {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 15px;
+}
+
+    #information h1 {
+        align-self: center;
+    }
+
+    #information p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+
+form fieldset {
+    border: 2px solid #53C27C;
+    border-radius: 12px;
+    background: #B8EBC6;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+form legend {
+    font-size: 20px;
+    padding: 0 10px;
+    color: #255F38;
+    font-weight: bold;
+}
+
+#email-sender {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 400px;
+}
+    #email-sender label {
+        font-weight: bold;
+        color: #255F38;
+        font-size: 16px;
+    }
+
+    #email-sender textarea {
+    
+        height: 328px;
+    }
+        #email-sender input:focus,
+        #email-sender textarea:focus {
+            border-color: #E86A8B;
+            box-shadow: 0 0 5px #E86A8B;
+        }
+    #email-sender button {
+        margin-top: 10px;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        background: #E86A8B; 
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        #email-sender button:hover {
+            background: #9A64F7; 
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }

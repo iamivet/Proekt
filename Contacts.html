@@ -29,7 +29,7 @@
                 <a href="Cart.html">Кошница</a>
             </li>
             <li>
-                <a href="#">Kонтакти</a>
+                <a href="Contacts.html">Kонтакти</a>
             </li>
             <li class="reg">
 
@@ -43,15 +43,42 @@
         </ul>
 
     </nav>
+    <div id="conteiner">
 
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d605.4628919013245!2d24.807364334120088!3d42.64213965164158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbg!4v1765553302220!5m2!1sen!2sbg"
-                width="100%"
-                height="400"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy">
-        </iframe>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d605.4628919013245!2d24.807364334120088!3d42.64213965164158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbg!4v1765553302220!5m2!1sen!2sbg"
+                    width="100%"
+                    height="700"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+            </iframe>
+        </div>
+        <div id="information">
+            <h1>Информация</h1>
+            <p>
+                <strong><i>Телефон:</i></strong> +359 888 123 456<br />
+                <strong><i>Имейл:</i></strong> info@example.com<br />
+                <strong><i>Адрес:</i></strong> ул. „Пазарна“ 10–12, 4300 Карлово<br />
+            </p>
+
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Изпрати email</legend>
+                    <div id="email-sender"> 
+                        <label>Вашият email:</label>
+                        <input type="text" name="name">
+
+                        <label>Съобщение:</label>
+                        <textarea name="message" ></textarea>
+
+                        <button type="submit">Изпрати</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        
     </div>
 </body>
 </html>
