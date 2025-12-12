@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contacts</title>
+    <link  rel="stylesheet" href="css/contacts.css"/>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="Home.html">Начало</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="showMenu()">Жанрове</a>
+                <div class="dropdown-content">
+                    <a href="#">Роман</a>
+                    <a href="#">Криминален роман</a>
+                    <a href="#">Трилър</a>
+                    <a href="#">Хорър (Ужаси)</a>
+                    <a href="#">Фантастика</a>
+                    <a href="#">Фентъзи</a>
+                    <a href="#">Исторически роман</a>
+                    <a href="#">Приключенски роман</a>
+                </div>
+            </li>
+            <li>
+                <a href="Cart.html">Кошница</a>
+            </li>
+            <li>
+                <a href="#">Kонтакти</a>
+            </li>
+            <li class="reg">
+
+                <a href="#">Register</a>
+
+
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ul>
+
+    </nav>
+</body>
+</html>
+
+<script>
+
+    function showMenu() {
+        let menu = document.querySelector(".dropdown-content");
+
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        }
+        else {
+            menu.style.display = "block";
+        }
+
+    }
+
+</script>
