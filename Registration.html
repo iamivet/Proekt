@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link  rel="stylesheet" href="css/registration.css"/>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="Home.html">Начало</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="showMenu()">Жанрове</a>
+                <div class="dropdown-content">
+                    <a href="#">Роман</a>
+                    <a href="#">Криминален роман</a>
+                    <a href="#">Трилър</a>
+                    <a href="#">Хорър (Ужаси)</a>
+                    <a href="#">Фантастика</a>
+                    <a href="#">Фентъзи</a>
+                    <a href="#">Исторически роман</a>
+                    <a href="#">Приключенски роман</a>
+                </div>
+            </li>
+            <li>
+                <a href="Cart.html">Кошница</a>
+            </li>
+            <li>
+                <a href="Contacts.html">Kонтакти</a>
+            </li>
+            <li class="reg">
+
+                <a href="Registration.html">Register</a>
+
+
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="conteiner">
+        <div class="card">
+            <h1>Регистрация</h1>
+            <form>
+                <div class="form-group">
+                    <label for="username">Потребителско име:</label>
+                    <input type="text" id="username" placeholder="cool_user" />
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Имейл:</label>
+                    <input type="email" id="email" placeholder="email@example.com" />
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password">Парола:</label>
+                    <input type="password" id="password" placeholder="••••••••" />
+                </div>
+
+
+                <div class="form-group">
+                    <label for="confirm">Повтори паролата:</label>
+                    <input type="password" id="confirm" placeholder="••••••••" />
+                </div>
+
+
+                <button class="btn" type="submit">Регистрирай се</button>
+            </form>
+
+
+            <div class="footer-text">
+                Вече имаш акаунт? <a href="#">Вход</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+    function showMenu() {
+        let menu = document.querySelector(".dropdown-content");
+
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        }
+        else {
+            menu.style.display = "block";
+        }
+
+    }
+
+</script>
