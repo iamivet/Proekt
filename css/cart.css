@@ -2,15 +2,15 @@
     width: 90%;
     max-width: 1000px;
     margin: 50px auto;
-    background: #fff;
+    background: #FFFDF9;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(74, 58, 42, 0.15);
 }
 
 h1, h2 {
     text-align: center;
-    color: #53C27C;
+    color: #4A3A2A;
 }
 
 table {
@@ -18,11 +18,12 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
     font-size: 16px;
+    color: #4A3A2A;
 }
 
 thead {
-    background: #F9C5D5; 
-    color: #4A4A4A;
+    background: #E6D5BF;
+    color: #4A3A2A;
 }
 
     thead th {
@@ -31,11 +32,11 @@ thead {
     }
 
 tbody tr {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #C8B9A6;
 }
 
     tbody tr:nth-child(even) {
-        background: #FDF1A9; 
+        background: #FFF6E8;
     }
 
 tbody td {
@@ -60,44 +61,45 @@ button {
 }
 
 .edit-btn {
-    background: #9A64F7; 
+    background: #3A6EA5;
     color: #fff;
 }
 
     .edit-btn:hover {
-        background: #DCC7FF; 
+        background: #6FA1D8;
     }
 
 .remove-btn {
-    background: #E86A8B;
+    background: #C65A3A;
     color: #fff;
 }
 
     .remove-btn:hover {
-        background: #F9C5D5;
+        background: #A94A30;
     }
 
 .btn-continue {
-    background: #4A90E2;
-    color: #fff;
+    background: #C8B9A6;
+    color: #4A3A2A;
 }
 
     .btn-continue:hover {
-        background: #C7E1FF;
+        background: #E6D5BF;
     }
 
 button:last-child {
-    background: #F2C200; 
+    background: #D4A373;
     color: #fff;
 }
 
     button:last-child:hover {
-        background: #FDF1A9; 
+        background: #E6C59A;
     }
 
 
 .summary {
-    background: #B8EBC6;
+    background: #FFF6E8;
+    border: 1px solid #C8B9A6;
     padding: 20px;
     border-radius: 15px;
     margin-top: 20px;
@@ -109,6 +111,7 @@ button:last-child {
         justify-content: space-between;
         margin: 8px 0;
         font-weight: bold;
+        color: #4A3A2A;
     }
 
     .summary select {
@@ -118,11 +121,14 @@ button:last-child {
 
 input[type="number"] {
     border-radius: 5px;
-    border: 1px solid #ccc;
     text-align: center;
+    border: 1px solid #C8B9A6;
+    background-color: #FFFDF9;
+    color: #4A3A2A;
 }
 
     input[type="number"]:focus {
-        border-color: #53C27C;
+        border-color: #C65A3A;
         outline: none;
+        box-shadow: 0 0 4px rgba(198, 90, 58, 0.5);
     }
