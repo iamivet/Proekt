@@ -15,7 +15,7 @@
                 <a href="Home.html">Начало</a>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropbtn" onclick="showMenu3()">Жанрове</a>
+                <a href="#" class="dropbtn" onclick="showMenu()">Жанрове</a>
                 <div class="dropdown-content">
                     <a href="#">Роман</a>
                     <a href="#">Криминален роман</a>
@@ -73,54 +73,45 @@
 
                 „Да уловиш 13“ е роман за израстването, за тежестта на семейните тайни и за любовта, която може ни дава смелост.
             </p>
-                <div class="accordion-header">
-                    <span>Информация за доставка</span>
-                    <button class="arrow-btn" onclick="showMenu()">▼</button>
-                </div>
-                <div class="accordion-content">
-                    <p>
-                        <span>* Сроковете за доставка могат да бъдат удължени и по време на кампании, както и в зависимост от наличностите на поръчаните артикули.</span><br />
+            <div class="accordion-header">
+                <span>Информация за доставка</span>
+                <button class="arrow-btn" onclick="showMenu3()">▼</button>
+            </div>
+            <div class="accordion-content">
+                <p>
+                    <span>* Сроковете за доставка могат да бъдат удължени и по време на кампании, както и в зависимост от наличностите на поръчаните артикули.</span><br />
 
-                        Доставка до автомат на BoxNow<br />
-                        Цена за доставка до автомат - Безплатно<br />
-                        Доставка до офис на куриер<br />
-                        Цена за доставка до офис - 5,85 лв.| 2,99 €<br />
-                        Доставка до офис на Speedy или Econt. Безплатна доставка за поръчки над 59,90 лв.| 30,62 €<br />
-                        Доставка до магазин <br />
-                        Доставката до магазин е безплатна!<br />
-                        Доставка до твой адрес<br />
-                        При теб до 3 работни дни<br />
-                        Цена за доставка с куриер - 5,85 лв.| 2,99 €.<br />
-                        Безплатна доставка за поръчки над 59,90 лв.| 30,62 €<br />
-                    </p>
-                </div>
-                <hr />
-                <div class="accordion-header">
-                    <span>Връщане</span>
-                    <button class="arrow-btn" onclick="showMenu2()">▼</button>
-                </div>
-                <div class="accordion-content2">
-                    <p>
-                        Онлайн магазин orangecenter.bg уверява своите клиенти, че съгласно чл. 55, ал.1 от Закона за защита на потребителите, имат правото да се откажат / или заменят получена от тях стока в срок от 14 (четиринадесет) работни дни от датата на получаване на стоката САМО при условие, че продукта е:
+                    Доставка до автомат на BoxNow<br />
+                    Цена за доставка до автомат - Безплатно<br />
+                    Доставка до офис на куриер<br />
+                    Цена за доставка до офис - 5,85 лв.| 2,99 €<br />
+                    Доставка до офис на Speedy или Econt. Безплатна доставка за поръчки над 59,90 лв.| 30,62 €<br />
+                    Доставка до магазин <br />
+                    Доставката до магазин е безплатна!<br />
+                    Доставка до твой адрес<br />
+                    При теб до 3 работни дни<br />
+                    Цена за доставка с куриер - 5,85 лв.| 2,99 €.<br />
+                    Безплатна доставка за поръчки над 59,90 лв.| 30,62 €<br />
+                </p>
+            </div>
+            <hr />
+            <div class="accordion-header">
+                <span>Връщане</span>
+                <button class="arrow-btn" onclick="showMenu2()">▼</button>
+            </div>
+            <div class="accordion-content2">
+                <p>
+                    Онлайн магазин orangecenter.bg уверява своите клиенти, че съгласно чл. 55, ал.1 от Закона за защита на потребителите, имат правото да се откажат / или заменят получена от тях стока в срок от 14 (четиринадесет) работни дни от датата на получаване на стоката САМО при условие, че продукта е:
 
-                        - в оригиналният си вид и качествени характеристики, със запазена оригинална опаковка и етикет, като не се счита за повредена опаковката, цялостта на която е била нарушена по начин, единствено позволяващ отделянето й от стоката.
+                    - в оригиналният си вид и качествени характеристики, със запазена оригинална опаковка и етикет, като не се счита за повредена опаковката, цялостта на която е била нарушена по начин, единствено позволяващ отделянето й от стоката.
 
-                        - без следи от употреба (скъсване, надраскване, счупване или други повреди), както и няма други повреди, причинени от неправилна употреба.
-                    </p>
-                </div>
-            <!--</div>-->
+                    - без следи от употреба (скъсване, надраскване, счупване или други повреди), както и няма други повреди, причинени от неправилна употреба.
+                </p>
+            </div>
         </div>
     </div>
+    <script src="js/showMenu.js"></script>
     <script>
-        function showMenu() {
-            let element = document.getElementsByClassName("accordion-content")[0];
-
-            if (element.style.display == "block") {
-                element.style.display = "none";
-            } else {
-                element.style.display = "block";
-            }
-        }
         function showMenu2() {
             let element = document.getElementsByClassName("accordion-content2")[0];
 
@@ -132,15 +123,13 @@
         }
 
         function showMenu3() {
-            let menu = document.querySelector(".dropdown-content");
+            let element = document.getElementsByClassName("accordion-content")[0];
 
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
+            if (element.style.display == "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
             }
-            else {
-                menu.style.display = "block";
-            }
-
         }
 
     </script>
