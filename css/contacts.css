@@ -10,7 +10,7 @@
     margin-top: 20px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 12px rgba(74, 58, 42, 0.25);
     height: 700px;
 }
 
@@ -24,25 +24,27 @@
 
     #information h1 {
         align-self: center;
+        color: #4A3A2A;
     }
 
     #information p {
         font-size: 20px;
         line-height: 1.6;
         margin: 10px 0;
+        color: #4A3A2A;
     }
 
 form fieldset {
-    border: 2px solid #53C27C;
+    border: 2px solid #C8B9A6;
     border-radius: 12px;
-    background: #B8EBC6;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background: #FFF6E8;
+    box-shadow: 0 4px 15px rgba(74, 58, 42, 0.15);
 }
 
 form legend {
     font-size: 20px;
     padding: 0 10px;
-    color: #255F38;
+    color: #3A6EA5;
     font-weight: bold;
 }
 
@@ -54,18 +56,29 @@ form legend {
 }
     #email-sender label {
         font-weight: bold;
-        color: #255F38;
+        color: #4A3A2A;
         font-size: 16px;
     }
 
     #email-sender textarea {
-    
         height: 328px;
+        border: 1px solid #C8B9A6;
+        background-color: #FFFDF9;
     }
+
+    #email-sender input {
+        border-radius: 8px;
+        border: 1px solid #C8B9A6;
+        padding: 8px;
+        background-color: #FFFDF9;
+        color: #4A3A2A;
+    }
+
         #email-sender input:focus,
         #email-sender textarea:focus {
-            border-color: #E86A8B;
-            box-shadow: 0 0 5px #E86A8B;
+            border-color: #C65A3A;
+            box-shadow: 0 0 6px rgba(198, 90, 58, 0.6);
+            outline: none;
         }
     #email-sender button {
         margin-top: 10px;
@@ -73,7 +86,7 @@ form legend {
         font-size: 16px;
         border: none;
         border-radius: 8px;
-        background: #E86A8B; 
+        background: #C65A3A;
         color: white;
         font-weight: bold;
         cursor: pointer;
@@ -81,7 +94,7 @@ form legend {
     }
 
         #email-sender button:hover {
-            background: #9A64F7; 
+            background: #A94A30;
             transform: translateY(-2px);
             box-shadow: 0 3px 10px rgba(0,0,0,0.2);
         }
