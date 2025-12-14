@@ -2,6 +2,8 @@
     background-color: #E6D5BF;
     font-size: 25px;
     box-shadow: 0 4px 12px rgba(74, 58, 42, 0.15);
+    position: relative;
+    z-index: 9999;
 }
 
     nav ul {
@@ -46,9 +48,9 @@
     border-radius: 6px;
     width: 300px;
     box-shadow: 0 4px 10px rgba(74, 58, 42, 0.25);
-    z-index: 100;
     overflow: hidden;
     border: 1px solid #C8B9A6;
+    z-index: 10000;
 }
 
     .dropdown-content a {

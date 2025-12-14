@@ -17,29 +17,6 @@
     font-size: 16px;
     color: #4A3A2A;
 }
-#search {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-    #search input {
-        height: 35px;
-        width: 700px;
-        border: 1px solid #C8B9A6;
-        border-radius: 20px;
-        padding-left: 10px;
-        background-color: #FFFDF9;
-    }
-
-    #search button {
-        height: 35px;
-        width: 35px;
-        border: 1px solid #C8B9A6;
-        border-radius: 20px;
-        background-color: #E6D5BF;
-    }
-
 .container {
     display: flex;
     gap: 40px;
