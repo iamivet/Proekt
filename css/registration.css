@@ -6,31 +6,34 @@
 }
 
 .card {
-    background: linear-gradient( 135deg, #F7FBFF, #F8F5FF, #FFF5F8 );
-    border: 3px solid #4A90E2;
-    width:600px;
-    display:flex;
-    flex-direction:column;
-  align-items:center;
+    background: linear-gradient( 135deg, #FFFDF9, #FFF6E8, #F5F3ED );
+    border: 3px solid #C8B9A6;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(74, 58, 42, 0.2);
 }
     .card h1 {
-        color: #6A3BD9;
-        align-self:center;
+        color: #4A3A2A;
+        align-self: center;
     }
 
-    .card form{
-     
-       font-size:20px;
-       
+    .card form {
+        font-size: 20px;
+        color: #4A3A2A;
     }
 
     .form-group{
         margin-top:15px;
     }
 
-    input{
-        font-size:15px;
-    }
+input {
+    font-size: 15px;
+    border: 1px solid #C8B9A6;
+    background-color: #FFFDF9;
+    color: #4A3A2A;
+}
 
 .btn {
     width: 100%;
@@ -41,24 +44,26 @@
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
-    background: linear-gradient(135deg, var(--green-dark), var(--blue-dark));
-    color: #6A3BD9;
+    background: linear-gradient( 135deg, #C65A3A,#E6D5BF );
+    color: #FFFFFF;
     transition: 0.3s;
 }
 
 
     .btn:hover {
         transform: translateY(-3px) scale(1.02);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        box-shadow: 0 10px 20px rgba(74, 58, 42, 0.3);
     }
 .footer-text {
     text-align: center;
     margin-top: 1.5rem;
     font-size: 0.9rem;
+    color: #4A3A2A;
 }
 
 
     .footer-text a {
         text-decoration: none;
         font-weight: 600;
+        color: #3A6EA5;
     }
