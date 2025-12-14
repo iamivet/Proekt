@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Registration</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/registration.css" />
     <link rel="stylesheet" href="css/navigation.css" />
 </head>
@@ -49,12 +49,6 @@
             <h1>Регистрация</h1>
             <form>
                 <div class="form-group">
-                    <label for="username">Потребителско име:</label>
-                    <input type="text" id="username" placeholder="cool_user" />
-                </div>
-
-
-                <div class="form-group">
                     <label for="email">Имейл:</label>
                     <input type="email" id="email" placeholder="email@example.com" />
                 </div>
@@ -65,36 +59,14 @@
                     <input type="password" id="password" placeholder="••••••••" />
                 </div>
 
-
-                <div class="form-group">
-                    <label for="confirm">Повтори паролата:</label>
-                    <input type="password" id="confirm" placeholder="••••••••" />
-                </div>
-
-
-                <button class="btn" type="submit">Регистрирай се</button>
+                <button class="btn" type="submit">Влез</button>
             </form>
 
 
             <div class="footer-text">
-                Вече имаш акаунт? <a href="#">Вход</a>
+               <a href="#">Смени паролата</a>
             </div>
         </div>
     </div>
 </body>
 </html>
-<script>
-
-    function showMenu() {
-        let menu = document.querySelector(".dropdown-content");
-
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        }
-        else {
-            menu.style.display = "block";
-        }
-
-    }
-
-</script>
