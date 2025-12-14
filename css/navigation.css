@@ -1,6 +1,7 @@
 ﻿nav {
-    background-color: #c7e1ff;
+    background-color: #E6D5BF;
     font-size: 25px;
+    box-shadow: 0 4px 12px rgba(74, 58, 42, 0.15);
 }
 
     nav ul {
@@ -22,13 +23,13 @@
 
             nav ul li a {
                 text-decoration: none;
-                color: #4a90e2;
+                color: #4A3A2A;
             }
 
             nav ul li:hover {
-                box-shadow: 0px 0px 20px #f2c200;
+                box-shadow: 0px 0px 20px rgba(212, 163, 115, 0.8);
                 transform: scale(1.05);
-                background-color: #afcffd;
+                background-color: #FFF6E8;
             }
 
 .reg {
@@ -41,19 +42,24 @@
     display: none;
     position: absolute;
     top: 45px;
-    background: #d9ecff;
+    background: #FFFDF9;
     border-radius: 6px;
     width: 300px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(74, 58, 42, 0.25);
     z-index: 100;
     overflow: hidden;
+    border: 1px solid #C8B9A6;
 }
 
     .dropdown-content a {
         display: flex;
         flex-direction: column;
+        color: #4A3A2A;
     }
 
+        .dropdown-content a:hover {
+            background-color: #FFF6E8; 
+        }
 .dropdown:hover .dropdown-content {
     display: block;
 }
