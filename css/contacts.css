@@ -62,6 +62,7 @@ form legend {
 
     #email-sender textarea {
         height: 328px;
+        width: 100%;
         border: 1px solid #C8B9A6;
         background-color: #FFFDF9;
     }
